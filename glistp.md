@@ -1,4 +1,16 @@
-function showHint(str) { var xmlhttp; if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari xmlhttp=new XMLHttpRequest(); } else {// code for IE6, IE5 xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); } xmlhttp.onreadystatechange=function() { if (xmlhttp.readyState==4 && xmlhttp.status==200) { var result=xmlhttp.responseText; var obj = JSON.parse(result);//解析json字串為json物件形式 var html = '<table border=1 width=100%>';// for (var i = 0; i < obj.length; i ++ ) {// html += '<tr>';// for(j=0;j<obj\[i\].data.length;j++) { html+= '<td>'+obj\[i\].data\[j\]+'</td>'; } html += '</tr>'; } html+="</table>"; document.getElementById("order\_status").innerHTML=html; if(obj.length==1) //只有一筆代表查不到資料 alert('查無資料'); } } var url="https://script.google.com/macros/s/AKfycbwJOajAYKRM77CELpG5bf5koUbY-TdN24apUJfo22FLsYft9rTP/exec"; xmlhttp.open("get",url+"?uid="+encodeURIComponent(str),true); xmlhttp.send(); }  輸入購買者身分證號：
+<!DOCTYPE html>
+<html>
+<body>
+	<form id="previewform" onsubmit="location.href='/?'+this.file.value;return false">
+		<p>
+			請輸入欲查詢姓名：
+			<input type="num" id="name" value="" placeholder="王小明" size="60" autofocus>
+			<input type="submit" value="查詢" onclick="showHint(num.value);">
+	</form>
+	<script src="/htmlpreview.js"></script>
+</body>
+</html>
+
 
 請輸入欲查詢姓名：<input placeholder="王小明" id="name" />
-<input type="button" name="inq" value="查詢" onclick="showHint(num.value);">
+<input type="submit" value="查詢" onclick="showHint(num.value);">
