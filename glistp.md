@@ -8,9 +8,7 @@
 	
 <script type="text/javascript">
     document.getElementById('list').onclick = function(){
-
-   var name = parseInt(document.getElementById('name').value);
-
-  document.getElementById('name').textContent = name;
+	
+　document.write(document.getElementById('name').textContent);
 }
 </script>
