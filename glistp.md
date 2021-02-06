@@ -2,13 +2,3 @@
 			<input type="text" id="name" value="" placeholder="王小明" size="15" autofocus>
 			<button id="list" value="查詢" src="/plist.js">
 	
-	
-	
-	
-	
-<script type="text/javascript">
-    document.getElementById('list').onclick = function(){
-	
-　document.write(document.getElementById('name').textContent);
-}
-</script>
