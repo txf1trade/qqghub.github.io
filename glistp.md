@@ -1,5 +1,5 @@
 請輸入欲查詢姓名：
              <input type="str" value="" placeholder="王小明" required size="15" autofocus>
-	     <input type="button" value="查詢" onclick="/plist.js">
+	     <input type="button" value="查詢" onclick="location.href='/plist.js'">
 			
 <script src="/plist.js"></script>
