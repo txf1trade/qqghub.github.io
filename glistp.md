@@ -1,1 +1,1 @@
-<input placeholder="請輸入姓名：">
+請輸入欲查詢姓名：<input placeholder="王小明" id="name" />
