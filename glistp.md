@@ -53,8 +53,9 @@ function convs()
       hour: 'numeric', minute: 'numeric', second: 'numeric' 
       };
          var content = document.getElementById("UTCtime");
-         var formatter = new Intl.DateTimeFormat([], options); 
-         var localTime = formatter.format(new Date("UTCtime"));
+         var formatter = new Intl.DateTimeFormat([], options);
+         var UTCtime = "2021-02-07T06:00:26.321Z";
+         var localTime = formatter.format(new Date(UTCtime));
          document.getElementById("convok").textContent=localTime.toString();
          
      }
