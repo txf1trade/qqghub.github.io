@@ -45,10 +45,17 @@ var xmlhttp;
         xmlhttp.send();
 }
 
-function convㄋ()
+function convs()
      {  
          var content = document.getElementById("timef");
          document.getElementById("convok").textContent=content.value;
+     }
+     
+     
+function showButtonEvent()
+     {
+         var content = document.getElementById("text");
+         document.getElementById("changeText").textContent=content.value;
      }
 
 </script>
@@ -65,6 +72,12 @@ function convㄋ()
 <input type="text" id="timef" value="2021-02-07T06:00:26.321Z" placeholder="2021-02-07T06:00:26.321Z" size="20" autofocus/>
 <input type="button" name="conv" value="轉換" onclick="convs();">
 <input type="text" id="convok">
+
+<br>
+ <input id="text">
+ <input type="button" value="Enter" onclick="showButtonEvent()">
+ <p id="changeText">NULL</p>
+
 
 <font size="1"><span id="result"></span></font><br>
 </body>
