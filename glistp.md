@@ -40,7 +40,7 @@ var xmlhttp;
                   }
 
           }
-    var url="https://script.google.com/macros/s/AKfycbzewOmGETSXe4HaRF3j3-biE05JbMvmBhEtrH2eaLfdbXjKdxsrrOUu/exec";
+    var url="https://script.google.com/macros/s/AKfycbz9ljckSi_HDzg1_PFSclPg8xgn4pMweNkzo9Lp-RZpS1scbmR5r1L4/exec";
         xmlhttp.open("get",url+"?name="+encodeURIComponent(name.value),true);
         xmlhttp.send();
 }
