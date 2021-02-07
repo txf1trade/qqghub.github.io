@@ -48,7 +48,9 @@ var xmlhttp;
 function convs()
      {
          var content = document.getElementById("time");
-         document.getElementById("convok").textContent=content.value;
+         var date = new Date(content); 
+         document.getElementById("convok").textContent=date.toString().value;
+         
      }
 
 </script>
