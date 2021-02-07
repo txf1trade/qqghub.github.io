@@ -46,9 +46,10 @@ var xmlhttp;
 }
 
 function conv()
-var time = "2021-02-07T06:00:26.321Z";
-document.getElementById("convok") = document.getElementById("time");
-{
+     {  
+         var content = document.getElementById("time");
+         document.getElementById("convok").textContent=content.value;
+     }
 
 </script>
 </head>
@@ -60,9 +61,9 @@ document.getElementById("convok") = document.getElementById("time");
 
 
 請輸入時間格式：
-<input type="text" id="time" value="" placeholder="2021-02-07T06:00:26.321Z" size="15" autofocus/>
+<input type="text" id="time" value="" placeholder="2021-02-07T06:00:26.321Z" size="20" autofocus/>
 <input type="button" name="conv" value="轉換" onclick="conv();">
-<input type="text" name="convok" value="" onclick="conv();">
+<input type="text" name="convok" value=""">
 
 <font size="1"><span id="result"></span></font><br>
 </body>
