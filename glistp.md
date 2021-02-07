@@ -53,6 +53,7 @@ var xmlhttp;
 <input type="text" id="name" placeholder="王小明" size="15" autofocus/>
 <input type="button" name="list" value="查詢" onclick="result();">
 
-<span id="result"></span>
+<font size="1"><span id="result"></span></font><br>
+//<span id="result"></span>
 </body>
 </html>
