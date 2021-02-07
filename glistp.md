@@ -75,9 +75,9 @@ function convs()
 請輸入時間格式：
  <input id="text" id="UTCtime" value="2021-02-07T06:00:26.321Z" placeholder="2021-02-07T06:00:26.321Z" size="20" autofocus/>
  <input type="button" value="轉換" onclick="convs();">
- 年: <p type="text" id="year" placeholder="2021"></p>
- 月: <p type="text" id="month" placeholder="02"></p> 
- 日: <p type="text" id="day" placeholder="07"></p>
+ 年: <p type="text" id="year" onclick="convs();"></p>
+ 月: <p type="text" id="month" onclick="convs();"></p> 
+ 日: <p type="text" id="day" onclick="convs();"></p>
  
 <br>
 <font size="1"><span id="result"></span></font><br>
