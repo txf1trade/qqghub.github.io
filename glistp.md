@@ -4,7 +4,7 @@
 <script type="text/javascript">
 function result()
 {
-var name = document.getElementById("name");;
+var name = document.getElementById("name");
 var xmlhttp;
 
         if (window.XMLHttpRequest)
@@ -45,6 +45,11 @@ var xmlhttp;
         xmlhttp.send();
 }
 
+function conv()
+var time = "2021-02-07T06:00:26.321Z";
+document.getElementById("convok") = document.getElementById("time");
+{
+
 </script>
 </head>
 <body>
@@ -52,6 +57,12 @@ var xmlhttp;
 請輸入姓名：
 <input type="text" id="name" placeholder="王小明" size="15" autofocus/>
 <input type="button" name="list" value="查詢" onclick="result();">
+
+
+請輸入時間格式：
+<input type="text" id="time" value="" placeholder="2021-02-07T06:00:26.321Z" size="15" autofocus/>
+<input type="button" name="conv" value="轉換" onclick="conv();">
+<input type="text" name="convok" value="" onclick="conv();">
 
 <font size="1"><span id="result"></span></font><br>
 </body>
