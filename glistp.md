@@ -54,7 +54,7 @@ function convs()
       };
          var content = document.getElementById("UTCtime");
          var formatter = new Intl.DateTimeFormat([], options); 
-         var localTime = formatter.format(new Date(content));
+         var localTime = formatter.format(new Date("UTCtime"));
          document.getElementById("convok").textContent=localTime.toString();
          
      }
