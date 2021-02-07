@@ -48,7 +48,6 @@ var xmlhttp;
 function convs()
      {
          var tcontent = document.getElementById("time");
-         var content = SUM(SPLIT(tcontent,"TZ")
          document.getElementById("convok").textContent=content.value;
      }
 
@@ -73,3 +72,7 @@ function convs()
 
 </body>
 </html>
+
+
+
+var content = SUM(SPLIT(tcontent,"TZ")
