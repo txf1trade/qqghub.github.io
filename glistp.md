@@ -1,6 +1,6 @@
 請輸入欲查詢姓名：
-        <input type="text" id="name" value="" placeholder="王小明" size="15" autofocus>
-	<input type="button" id="list" value="查詢" onclick="location.href='/'">
+        <input type="text" id="name" placeholder="王小明" size="15" autofocus/>
+        <input type="button" name="list" value="查詢" onclick="result();">  </br>
 	
 
 <button id="list" value="查詢" src="/plist.js">	
