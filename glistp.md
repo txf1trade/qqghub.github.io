@@ -47,7 +47,7 @@ var xmlhttp;
      
 function convs()
      {
-         var content = document.getElementById("time");
+         var content = document.getElementById("utctime");
          document.getElementById("convok").textContent=content.value;
          
      }
@@ -64,7 +64,7 @@ function convs()
 <br>
 
 請輸入時間格式：
- <input id="text" id="time" value="2021-02-07T06:00:26.321Z" placeholder="2021-02-07T06:00:26.321Z" size="20" autofocus/>
+ <input id="text" id="utctime" value="2021-02-07T06:00:26.321Z" placeholder="2021-02-07T06:00:26.321Z" size="20" autofocus/>
  <input type="button" value="轉換" onclick="convs();">
  <p type="text" id="convok" placeholder="2021-02-07T06:00:26.321Z"></p>
         
