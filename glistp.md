@@ -59,9 +59,10 @@ function conv()
 <input type="text" id="name" placeholder="王小明" size="15" autofocus/>
 <input type="button" name="list" value="查詢" onclick="result();">
 
+<br>
 
 請輸入時間格式：
-<input type="text" id="time" value="" placeholder="2021-02-07T06:00:26.321Z" size="20" autofocus/>
+<input type="text" id="time" value="2021-02-07T06:00:26.321Z" placeholder="2021-02-07T06:00:26.321Z" size="20" autofocus/>
 <input type="button" name="conv" value="轉換" onclick="conv();">
 <input type="text" name="convok" value="">
 
