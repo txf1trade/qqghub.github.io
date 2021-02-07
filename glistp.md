@@ -64,7 +64,7 @@ function convs()
 請輸入時間格式：
  <input id="text" id="time" value="2021-02-07T06:00:26.321Z" placeholder="2021-02-07T06:00:26.321Z" size="20" autofocus/>
  <input type="button" value="轉換" onclick="convs();">
- <input type="text" id="convok" value="123">
+ <input type="text" id="convok" placeholder="2021-02-07T06:00:26.321Z">
 
 
 <font size="1"><span id="result"></span></font><br>
