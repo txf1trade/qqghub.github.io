@@ -55,7 +55,7 @@ function convs()
       };
          var formatter = new Intl.DateTimeFormat([], options);
          var UTCtime = "2021-02-07T06:00:26.321Z";
-         var localTime = formatter.format(new Date(content.));
+         var localTime = formatter.format(new Date(content.value));
          document.getElementById("convok").textContent=localTime.toString();
      }
      
