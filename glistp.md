@@ -54,7 +54,7 @@ function convs()
       hour: 'numeric', minute: 'numeric', second: 'numeric' 
       };
          var formatter = new Intl.DateTimeFormat([], options);
-         var localTime = formatter.format(new Date(content.toString()));
+         var localTime = formatter.format(new Date(content.value));
          document.getElementById("convok").textContent=localTime.toString();
      }
      
