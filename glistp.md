@@ -47,7 +47,7 @@ var xmlhttp;
      
 function convs()
      {
-         var tcontent = document.getElementById("time");
+         var content = document.getElementById("time");
          document.getElementById("convok").textContent=content.value;
      }
 
