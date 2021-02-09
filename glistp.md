@@ -63,6 +63,12 @@ function convs()
          var localTime = formatter.format(new Date(content.value));
          document.getElementById("convok").textContent=localTime.toString();
      }       
+        function showButtonEvent()
+     {
+         var content = document.getElementById("text");
+         document.getElementById("changeText").textContent=content.value;
+     }
+   
    
 </script>
 </head>
@@ -79,7 +85,9 @@ function convs()
 <input type="button" value="轉換" onclick="convs();">
 <p id="convok"></p>
  
- 
+  <input id="text">
+     <input type="button" value="Enter" onclick="showButtonEvent()">
+     <p id="changeText">NULL</p>
  <br/>
  
 <br>
