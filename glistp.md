@@ -3,11 +3,6 @@
 <meta charset="UTF-8" />
 <script type="text/javascript">
 
-<script src="https://admingio.github.io/moment-timezone.js">
-<script src="https://admingio.github.io/moment-timezone-with-data.js">
-<script src="https://admingio.github.io/moment-timezone-with-data-1970-2030.js">
-
-
 function result()
 {
 var name = document.getElementById("name");
