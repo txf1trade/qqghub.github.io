@@ -1,6 +1,9 @@
 <html>
 <head>
 <meta charset="UTF-8" />
+<script src="https://admingio.github.io/moment-timezone.js" />"></script>
+<script src="https://admingio.github.io/moment-timezone-with-data.js" />"></script>
+<script src="https://admingio.github.io/moment-timezone-with-data-1970-2030.js" />"></script>
 <script type="text/javascript">
 
 function result()
