@@ -88,7 +88,7 @@ function convs()
   <input id="text">
      <input type="button" value="Enter" onclick="showButtonEvent()">
      <p id="changeText">NULL</p>
- <br/>
+ <br>
  
 <br>
 <font size="1"><span id="result"></span></font><br>
