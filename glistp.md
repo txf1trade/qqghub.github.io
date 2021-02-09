@@ -50,19 +50,6 @@ var xmlhttp;
         xmlhttp.open("get",url+"?name="+encodeURIComponent(name.value),true);
         xmlhttp.send();
 }
-     
-function convs()
-     {
-      var content = document.getElementById("UTCtime");
-      var options = { 
-      timeZone: "Asia/Taipei", 
-      year: 'numeric', month: 'numeric', day: 'numeric', 
-      hour: 'numeric', minute: 'numeric', second: 'numeric' 
-      };
-         var formatter = new Intl.DateTimeFormat([], options);
-         var localTime = formatter.format(new Date(content.value));
-         document.getElementById("convok").textContent=localTime.toString();
-     }       
         function showButtonEvent()
      {
          var content = document.getElementById("text");
@@ -81,10 +68,6 @@ function convs()
 <br>
 
 請輸入時間格式：
-<input id="text" id="UTCtime" value="2021-02-07T06:00:26.321Z" placeholder="2021-02-07T06:00:26.321Z" size="20" autofocus/>
-<input type="button" value="轉換" onclick="convs();">
-<p id="convok"></p>
- 
   <input id="text">
      <input type="button" value="Enter" onclick="showButtonEvent()">
      <p id="changeText">NULL</p>
