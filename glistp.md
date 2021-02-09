@@ -50,12 +50,7 @@ var xmlhttp;
         xmlhttp.open("get",url+"?name="+encodeURIComponent(name.value),true);
         xmlhttp.send();
 }
-        function showButtonEvent()
-     {
-         var content = document.getElementById("text");
-         document.getElementById("changeText").textContent=content.value;
-     }
-   
+  
    
 </script>
 </head>
@@ -64,14 +59,6 @@ var xmlhttp;
 請輸入姓名：
 <input type="text" id="name" placeholder="王小明" size="15" autofocus/>
 <input type="button" name="list" value="查詢" onclick="result();">
-
-<br>
-
-請輸入時間格式：
-  <input id="text">
-     <input type="button" value="Enter" onclick="showButtonEvent()">
-     <p id="changeText">NULL</p>
- <br>
  
 <br>
 <font size="1"><span id="result"></span></font><br>
