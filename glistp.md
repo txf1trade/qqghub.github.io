@@ -88,7 +88,3 @@ function convs()
 
 </body>
 </html>
-
-
-
-var content = SUM(SPLIT(tcontent,"TZ")
