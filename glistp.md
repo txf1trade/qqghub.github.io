@@ -62,8 +62,8 @@ function convs()
          var formatter = new Intl.DateTimeFormat([], options);
          var localTime = formatter.format(new Date(content.value));
          document.getElementById("convok").textContent=localTime.toString();
-     }
-     
+     }       
+   
 </script>
 </head>
 <body>
@@ -73,13 +73,14 @@ function convs()
 <input type="button" name="list" value="查詢" onclick="result();">
 
 <br>
-<br>
 
 請輸入時間格式：
- <input id="text" id="UTCtime" value="2021-02-07T06:00:26.321Z" placeholder="2021-02-07T06:00:26.321Z" size="20" autofocus/>
- <input type="button" value="轉換" onclick="convs();">
+<input id="text" id="UTCtime" value="2021-02-07T06:00:26.321Z" placeholder="2021-02-07T06:00:26.321Z" size="20" autofocus/>
+<input type="button" value="轉換" onclick="convs();">
+<p id="convok"></p>
+ 
+ 
  <br/>
- <p id="convok"></p>
  
 <br>
 <font size="1"><span id="convs"></span></font><br>
