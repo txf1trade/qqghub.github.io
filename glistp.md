@@ -91,7 +91,6 @@ function convs()
  <br/>
  
 <br>
-<font size="1"><span id="convs"></span></font><br>
 <font size="1"><span id="result"></span></font><br>
 
 </body>
