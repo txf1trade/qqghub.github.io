@@ -73,7 +73,7 @@ var xmlhttp;
 請輸入時間格式：
 <input id="text" id="UTCtime" value="2021-02-07T06:00:26.321Z" placeholder="2021-02-07T06:00:26.321Z" size="20" autofocus/>
 <input type="button" value="轉換" onclick="timezone();">
-<p id="tzok"></p>
+<p id="result"></p>
  
  <br> <br>
 
