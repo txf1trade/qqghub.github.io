@@ -60,7 +60,14 @@ var xmlhttp;
          var localTime = formatter.format(new Date(content.value));
          document.getElementById("convok").textContent=localTime.toString();
      } 
-   
+ 
+   function jszone()
+     {
+      var content = document.getElementById("UTCtime");
+      document.getElementById("convok").textContent=moment.tz("Asia/Taipei").format("YYYY/MM/DD HH:mm");
+     } 
+ 
+ 
 </script>
 </head>
 <body>
@@ -71,7 +78,7 @@ var xmlhttp;
   <br>  <br> 
 請輸入時間格式：
 <input id="text" id="UTCtime" value="2021-02-07T06:00:26.321Z" placeholder="2021-02-07T06:00:26.321Z" size="20" autofocus/>
-<input type="button" value="轉換" onclick="convs();">
+<input type="button" value="轉換" onclick="jszone();">
 <p id="convok"></p>
  
  <br> <br>
