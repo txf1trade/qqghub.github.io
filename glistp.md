@@ -71,7 +71,7 @@ var xmlhttp;
       };
          var formatter = new Intl.DateTimeFormat([], options);
          var localTime = formatter.format(new Date(content.value));
-         document.getElementById("tzok").textContent=formatter.toString();
+         document.getElementById("tzok").textContent=options.toString();
      }
  
 </script>
