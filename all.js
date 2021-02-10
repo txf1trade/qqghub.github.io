@@ -18,7 +18,7 @@ Date.prototype.format = function(fmt)
 　　return fmt;
 }
 
-var = function (key, value) {
+var datanls = function (key, value) {
     var a;
     if (typeof value === 'string') {
         a = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*)?)Z$/.exec(value);
