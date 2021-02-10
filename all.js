@@ -17,7 +17,7 @@ Date.prototype.format = function(fmt)
 　　fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));
 　　return fmt;
 }
-
+/*
 var datanls = function (key, value) {
     var a;
     if (typeof value === 'string') {
@@ -28,9 +28,9 @@ var datanls = function (key, value) {
     }
     return value;
 }; //true
+*/
 
 
-/*
 var nowd = new Date();
 var ny = nowd.getFullYear();	
 var nm = nowd.getMonth();
@@ -51,7 +51,7 @@ var datanls = function (key, value) {
     }
     return value;
 };
-*/
+
 
 function timezone(){
       var content = document.getElementById("UTCtime");
