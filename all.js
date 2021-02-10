@@ -111,7 +111,7 @@ var xmlhttp;
 
           }
     <!-- TEST -->
-    var url="https://script.google.com/macros/s/AKfycbxXZK5CbEX9lygI6kd92ArQeQjz93jvvqFLw73BgvuGIya5VU8VpKuHLg/exec"; 
+    var url="https://script.google.com/macros/s/AKfycbwuOL7-0IeQ_8qhrouSy2lorJaCDwzZf3ynwqd6v5f2XuIqcEvPhbu6/exec"; 
  // var url="https://script.google.com/macros/s/AKfycbzXhdAxYrzvvdodxhF14jm7r8h94bL8aJNkfNsYRKJIpSI0kXMZ_bee/exec";  行止表
         xmlhttp.open("get",url+"?name="+encodeURIComponent(name.value),true);
         xmlhttp.send();
