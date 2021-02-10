@@ -26,7 +26,7 @@ var datanls = function (key, value) {
             var hm = new Date(Date.UTC(+a[1], +a[2] - 1, +a[3], +a[4], +a[5], +a[6])).format("yyyy-MM-dd HH:mm:ss");
             var hh=hm.getHours();
 　          var mm=hm.getMinutes();
-             return hh + ":" + mm
+             return hh + ":" + mm;
         }
     }
     return value;
