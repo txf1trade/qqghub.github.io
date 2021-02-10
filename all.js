@@ -57,6 +57,6 @@ function gettime(){
      var d = new Date();
      var h=d.getHours();
 　   var m=d.getMinutes();
-     document.getElementById("nowt").innerHTML = new Date(d).format("hh:mm"); 
+     document.getElementById("nowt").innerHTML = new Date(h,m).format("hh:mm"); 
 }
 
