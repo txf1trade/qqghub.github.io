@@ -40,3 +40,23 @@ var xmlhttp;
         xmlhttp.open("get",url+"?name="+encodeURIComponent(name.value),true);
         xmlhttp.send();
 }
+
+function timezone(){
+      var content = document.getElementById("UTCtime");
+      var options = { 
+      timeZone: "Asia/Taipei", 
+      year: 'numeric', month: 'numeric', day: 'numeric', 
+      hour: 'numeric', minute: 'numeric', second: 'numeric' 
+      };
+         var formatter = new Intl.DateTimeFormat([], options);
+         var localTime = formatter.format(new Date(content.value));
+         document.getElementById("tzok").textContent=localTime.toString();
+}   
+<!-- 取得現在時間 -->
+function gettime(){  
+     var d = new Date();
+     var h=d.getHours();
+　   var m=d.getMinutes();
+     document.getElementById("nowt").innerHTML = h + ':'+ m; 
+}
+
