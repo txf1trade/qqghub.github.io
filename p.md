@@ -60,8 +60,11 @@ Date.prototype.format = function(fmt)
  <br> <br>
 
 <input type="button" value="取得現在時間" onclick="gettime();">
+<p id="nowt"></p>時間(ok)：
+
+<input type="button" value="取得現在時間" onclick="gettime();">
 <p id="nowt"></p>時間(test)：
- 
+
  <br> <br>
  
 
