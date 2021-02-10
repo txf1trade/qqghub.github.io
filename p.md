@@ -15,7 +15,7 @@
          document.getElementById("tzok").textContent=localTime.toString();
      }   
  function gettime(){
-   var d = new Date();
+  var d = new Date();
   var h=d.getHours();
 　var m=d.getMinutes();
 
