@@ -2,25 +2,22 @@
 <head>
 <meta charset="UTF-8" />
 <script type="text/javascript">
-  
 </script>
 </head>
 <body>
-
-請輸入姓名(ok)：
+(1)請輸入姓名(ok)：
 <input type="text" id="name" placeholder="王小明" size="15" autofocus/>
 <input type="button" name="list" value="查詢" onclick="result();"> <!--  all.js -->
-  <br>  <br>  
-請輸入時間格式(ok)：
+<br><br>  
+(2)請輸入時間格式(ok)：
 <input id="text" id="UTCtime" value="2021-02-07T06:00:26.321Z" placeholder="2021-02-07T06:00:26.321Z" size="20" autofocus/>
 <input type="button" value="轉換" onclick="timezone();">
 <p id="tzok"></p>
- <br> <br>
-
-時間(ok)：<input type="button" value="取得現在時間" onclick="gettime();">
+<br><br>
+(3)時間(ok)：<input type="button" value="取得現在時間" onclick="gettime();">
 <p id="nowt"></p>
 
- <br> <br>
+<br><br>
  
 
 <font size="1"><span id="result"></span></font><br>
