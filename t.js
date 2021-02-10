@@ -1,4 +1,4 @@
-function result()
+function datanls()
 {
 var name = document.getElementById("name");
 var xmlhttp;
