@@ -61,14 +61,15 @@ function gettime(){
 時間(ok)：<input type="button" value="取得現在時間" onclick="gettime();">
 <p id="nowt"></p>
 
-999,"abcd","1899-12-29T22:50:00.000Z","2021-02-09T17:38:05.721Z"
-<input type="button" value="分割" onclick="data-anls();">
+<input type="text" id="name" placeholder="王小明" size="15" autofocus/>
+<input type="button" value="分割" onclick="datanls();">
 
 
 
  <br> <br>
  
 
+<font size="1"><span id="result"></span></font><br>
 <font size="1"><span id="result"></span></font><br>
 <script src="./ft.js"></script>
 
