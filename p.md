@@ -3,25 +3,6 @@
 <meta charset="UTF-8" />
 <script type="text/javascript">
   
-function timezone(){
-      var content = document.getElementById("UTCtime");
-      var options = { 
-      timeZone: "Asia/Taipei", 
-      year: 'numeric', month: 'numeric', day: 'numeric', 
-      hour: 'numeric', minute: 'numeric', second: 'numeric' 
-      };
-         var formatter = new Intl.DateTimeFormat([], options);
-         var localTime = formatter.format(new Date(content.value));
-         document.getElementById("tzok").textContent=localTime.toString();
-}   
-
-function gettime(){
-     var d = new Date();
-     var h=d.getHours();
-　   var m=d.getMinutes();
-     document.getElementById("nowt").innerHTML = h + ':'+ m; 
-}
-
 </script>
 </head>
 <body>
