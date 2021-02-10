@@ -19,7 +19,7 @@
   var h=d.getHours();
 　var m=d.getMinutes();
 
-  document.getElementById("nowt").innerHTML = h +':'+m'';
+  document.getElementById("nowt").innerHTML = h +':'+m;
   
   
   function ShowTime(){
