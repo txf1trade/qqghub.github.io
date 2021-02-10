@@ -37,7 +37,7 @@
  <br> <br>
 
 <input type="button" value="取得現在時間" onclick="gettime();">
-時間(test)：<p id="nowt"></p>
+<p id="nowt"></p>時間(test)：
  
  <br> <br>
  
