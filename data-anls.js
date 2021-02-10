@@ -1,5 +1,5 @@
 
-var dateReviver = function (key, value) {
+var data-anls = function (key, value) {
     var a;
     if (typeof value === 'string') {
         a = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*)?)Z$/.exec(value);
