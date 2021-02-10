@@ -18,7 +18,7 @@ Date.prototype.format = function(fmt)
 　　return fmt;
 }
 
-var dateReviver = function (key, value) {
+var = function (key, value) {
     var a;
     if (typeof value === 'string') {
         a = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*)?)Z$/.exec(value);
@@ -66,7 +66,7 @@ var xmlhttp;
                   if (xmlhttp.readyState==4 && xmlhttp.status==200)      
                   {
                         var result=xmlhttp.responseText;
-                        var obj = JSON.parse(result);//解析json字串為json物件形式
+                        var obj = JSON.parse(result,datanls);//解析json字串為json物件形式
                                                 
                         var html = '<table border=1 width=100%>';//
                         
