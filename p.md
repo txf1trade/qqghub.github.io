@@ -21,10 +21,9 @@ Date.prototype.format = function(fmt)
 　　　　if(new RegExp("("+ k +")").test(fmt))
 　　fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));
 　　return fmt;
-}  
+}
   
-  function timezone()
-     {
+function timezone(){
       var content = document.getElementById("UTCtime");
       var options = { 
       timeZone: "Asia/Taipei", 
@@ -34,14 +33,14 @@ Date.prototype.format = function(fmt)
          var formatter = new Intl.DateTimeFormat([], options);
          var localTime = formatter.format(new Date(content.value));
          document.getElementById("tzok").textContent=localTime.toString();
-     }   
- function gettime(){
-  var d = new Date();
-  var h=d.getHours();
-　var m=d.getMinutes();
+}   
 
-  document.getElementById("nowt").innerHTML = h +':'+m; 
-  }
+function gettime(){
+     var d = new Date();
+     var h=d.getHours();
+　   var m=d.getMinutes();
+     document.getElementById("nowt").innerHTML = h +':'+m; 
+}
  
  
  
