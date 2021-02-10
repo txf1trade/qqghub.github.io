@@ -61,6 +61,30 @@ var xmlhttp;
          document.getElementById("tzok").textContent=localTime.toString();
      }   
  
+ Date.prototype.format = function(format) {
+       var date = {
+              “M “: this.getMonth() 1,
+              “d “: this.getDate(),
+              “h “: this.getHours(),
+              “m “: this.getMinutes(),
+              “s “: this.getSeconds(),
+              “q “: Math.floor((this.getMonth() 3) / 3),
+              “S “: this.getMilliseconds()
+       };
+       if (/(y )/i.test(format)) {
+              format = format.replace(RegExp.$1, (this.getFullYear() ”).substr(4 – RegExp.$1.length));
+       }
+       for (var k in date) {
+              if (new RegExp(“(” k “)”).test(format)) {
+                     format = format.replace(RegExp.$1, RegExp.$1.length == 1
+                            ? date[k] : (“00” date[k]).substr((“” date[k]).length));
+              }
+       }
+       return format;
+}
+ var d = new Date().format(‘yyyy-MM-dd’);
+ console.log(d);
+ 
 </script>
 </head>
 <body>
@@ -71,7 +95,7 @@ var xmlhttp;
   <br>  <br> 
 請輸入時間格式：
 <input id="text" id="UTCtime" value="2021-02-07T06:00:26.321Z" placeholder="2021-02-07T06:00:26.321Z" size="20" autofocus/>
-<input type="button" value="轉換" onclick="timezone();">
+<input type="button" value="轉換" onclick="function();">
 <p id="tzok"></p>
  
  <br> <br>
