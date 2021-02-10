@@ -31,7 +31,7 @@ var datanls = function (key, value) {
 
 
 
-/*
+
 var nowd = new Date();
 var ny = nowd.getFullYear();	
 var nm = nowd.getMonth();
@@ -42,9 +42,9 @@ var datanls = function (key, value) {
     if (typeof value === 'string') {
         a = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*)?)Z$/.exec(value);                                             
           if (+a[1]=='1899'&& +a[2]=='12'&&+a[3]=='30') {    
-	   //    a[1]=ny; a[2]=nm; a[3]=nd;
-		//return new Date(Date.UTC(+a[1], +a[2], +a[3], +a[4], +a[5], +a[6])).format("yyyy-MM-dd HH:mm:ss");
-	//}    
+	       a[1]=ny; a[2]=nm; a[3]=nd;
+		return new Date(Date.UTC(+a[1], +a[2], +a[3], +a[4], +a[5], +a[6])).format("yyyy-MM-dd HH:mm:ss");
+	       
           } else {
                return new Date(Date.UTC(+a[1], +a[2], +a[3], +a[4], +a[5], +a[6])).format("yyyy-MM-dd HH:mm:ss");
             }
@@ -52,7 +52,7 @@ var datanls = function (key, value) {
     }
     return value;
 };
-*/
+
 
 function timezone(){
       var content = document.getElementById("UTCtime");
