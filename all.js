@@ -25,6 +25,9 @@ var datanls = function (key, value) {
         if (a) {
              return new Date(Date.UTC(+a[1], +a[2] - 1, +a[3], +a[4], +a[5], +a[6])).format("yyyy-MM-dd HH:mm:ss");
         }
+        else if (a.substr(0,10) === "1899-12-30 "){
+            value = a.substr(11,15);
+        }
     }
     return value;
 };
