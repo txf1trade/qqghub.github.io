@@ -23,4 +23,4 @@ function tick(){
 
 tick();
 
-setInterval(tick, 10000);
+setInterval(tick, 10000); //更新時鐘
