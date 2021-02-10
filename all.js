@@ -46,7 +46,7 @@ var datanls = function (key, value) {
             // return new Date(Date.UTC(+a[1], +a[2], +a[3], +a[4], +a[5], +a[6])).format("yyyy-MM-dd HH:mm:ss");
 	       return a[4] + ":" + a[5];
           } else if(value == null){
-	       return value
+	       return value;
 	    }
             else {
                return new Date(Date.UTC(+a[1], +a[2]-1, +a[3], +a[4], +a[5], +a[6])).format("yyyy-MM-dd HH:mm:ss");
