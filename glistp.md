@@ -58,7 +58,7 @@ var xmlhttp;
       };
          var formatter = new Intl.DateTimeFormat([], options);
          var localTime = formatter.format(new Date(content.value));
-         document.getElementById("tzok").textContent=localTime.toTimeString;
+         document.getElementById("tzok").textContent=localTime.toString;
      }   
  
 </script>
