@@ -14,7 +14,7 @@ function gettime(){
      var d = new Date();
      var h=d.getHours();
 　   var m=d.getMinutes();
-     document.getElementById("nowt").innerHTML = new Date(d).format("yyyy-MM-dd HH:mm:ss"); 
+     document.getElementById("nowt").innerHTML = h +'時:' + m + '分'; 
 }
 
 function result()
