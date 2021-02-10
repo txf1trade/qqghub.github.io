@@ -68,5 +68,6 @@ Date.prototype.format = function(fmt)
 <font size="1"><span id="result"></span></font><br>
 
 <script src="./ft.js"></script>
+<script src="./t.js"></script>
 </body>
 </html>
