@@ -58,7 +58,7 @@ var xmlhttp;
       };
          var formatter = new Intl.DateTimeFormat([], options);
          var localTime = formatter.format(new Date(content.value));
-         document.getElementById("tzok").textContent=localTime.toString();
+         document.getElementById("tzok").textContent=localTime.toTimeString;
      }  
 
  function ttz()
@@ -101,7 +101,7 @@ var xmlhttp;
   <br>  <br> 
 請輸入時間格式：
 <input id="text" id="UTCtime" value="2021-02-07T06:00:26.321Z" placeholder="2021-02-07T06:00:26.321Z" size="20" autofocus/>
-<input type="button" value="轉換" onclick="ttz();">
+<input type="button" value="轉換" onclick="timezone();">
 <p id="tzok"></p>
  
  <br> <br>
