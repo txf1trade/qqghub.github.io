@@ -1,3 +1,22 @@
+function timezone(){
+      var content = document.getElementById("UTCtime");
+      var options = { 
+      timeZone: "Asia/Taipei", 
+      year: 'numeric', month: 'numeric', day: 'numeric', 
+      hour: 'numeric', minute: 'numeric', second: 'numeric' 
+      };
+         var formatter = new Intl.DateTimeFormat([], options);
+         var localTime = formatter.format(new Date(content.value));
+         document.getElementById("tzok").textContent=localTime.toString();
+}   
+<!-- 取得現在時間 -->
+function gettime(){  
+     var d = new Date();
+     var h=d.getHours();
+　   var m=d.getMinutes();
+     document.getElementById("nowt").innerHTML = new Date(d).format("yyyy-MM-dd HH:mm:ss"); 
+}
+
 function result()
 {
 var name = document.getElementById("name");
@@ -39,24 +58,5 @@ var xmlhttp;
     var url="https://script.google.com/macros/s/AKfycbwdTX-Nao44d9oTGPRvht5TStmen96zq2ivTMJWH8ZkTGGQPooIcVkW-g/exec";
         xmlhttp.open("get",url+"?name="+encodeURIComponent(name.value),true);
         xmlhttp.send();
-}
-
-function timezone(){
-      var content = document.getElementById("UTCtime");
-      var options = { 
-      timeZone: "Asia/Taipei", 
-      year: 'numeric', month: 'numeric', day: 'numeric', 
-      hour: 'numeric', minute: 'numeric', second: 'numeric' 
-      };
-         var formatter = new Intl.DateTimeFormat([], options);
-         var localTime = formatter.format(new Date(content.value));
-         document.getElementById("tzok").textContent=localTime.toString();
-}   
-<!-- 取得現在時間 -->
-function gettime(){  
-     var d = new Date();
-     var h=d.getHours();
-　   var m=d.getMinutes();
-     document.getElementById("nowt").innerHTML = new Date(d).format('HH:mm'); 
 }
 
