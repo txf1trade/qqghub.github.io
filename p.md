@@ -2,6 +2,27 @@
 <head>
 <meta charset="UTF-8" />
 <script type="text/javascript">
+  
+Date.prototype.format = function(fmt)
+{
+　　var o = {
+　　　　"M+" : this.getMonth()+1, //月份
+　　　　"d+" : this.getDate(), //日
+　　　　"h+" : this.getHours()%12 == 0 ? 12 : this.getHours()%12, //小時
+　　　　"H+" : this.getHours(), //小時
+　　　　"m+" : this.getMinutes(), //分
+　　　　"s+" : this.getSeconds(), //秒
+　　　　"q+" : Math.floor((this.getMonth()+3)/3), //季度
+　　　　"S" : this.getMilliseconds() //毫秒
+　　};
+　　if(/(y+)/.test(fmt))
+　　　　fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length));
+　　for(var k in o)
+　　　　if(new RegExp("("+ k +")").test(fmt))
+　　fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));
+　　return fmt;
+}  
+  
   function timezone()
      {
       var content = document.getElementById("UTCtime");
@@ -19,18 +40,7 @@
   var h=d.getHours();
 　var m=d.getMinutes();
 
-  document.getElementById("nowt").innerHTML = h +':'+m;
-  
-  
-  function ShowTime(){
-　var NowDate=new Date();
-　var h=NowDate.getHours();
-　var m=NowDate.getMinutes();
-　var s=NowDate.getSeconds();　
-　document.getElementById('showbox').innerHTML = h+'時'+m+'分'+s+'秒';
-　setTimeout('ShowTime()',1000);
-}
-  
+  document.getElementById("nowt").innerHTML = h +':'+m; 
   }
  
  
