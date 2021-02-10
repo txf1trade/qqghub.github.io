@@ -25,7 +25,7 @@ var datanls = function (key, value) {
         //  1899-12-30T11:15:00.000Z,1899,12,30,11,15,00.000
                                                 
         if (!a) {   
-            		if(+a[1]=='1899'&& +a[2]-1=='11'&&+a[3]=='30')
+            		if(+a[1]=='1899'&& +a[2]=='12'&&+a[3]=='30')
 		{
             a[1]=ny; a[2]=nm; a[3]=nd;
 			return new Date(Date.UTC(+a[1], +a[2] - 1, +a[3], +a[4], +a[5], +a[6])).format("yyyy-MM-dd HH:mm:ss");
