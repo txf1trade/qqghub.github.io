@@ -62,7 +62,7 @@ Date.prototype.format = function(fmt)
 時間(ok)：<input type="button" value="取得現在時間" onclick="gettime();">
 <p id="nowt"></p>
 
-<input id="text" id="UTCtime" value=""999,"abcd","1899-12-29T22:50:00.000Z","2021-02-09T17:38:05.721Z"" placeholder="2021-02-07T06:00:26.321Z" size="20" autofocus/>
+<input id="text" id="UTCtime" value="999,"abcd","1899-12-29T22:50:00.000Z","2021-02-09T17:38:05.721Z" placeholder="2021-02-07T06:00:26.321Z" size="20" autofocus/>
 
 
 
