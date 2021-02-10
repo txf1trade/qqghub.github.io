@@ -14,6 +14,13 @@
          var localTime = formatter.format(new Date(content.value));
          document.getElementById("tzok").textContent=localTime.toString();
      }   
+ function gettime(){
+  var d = new Date();
+  document.getElementById("nowt").textContent = d.value;
+  
+  }
+ 
+ 
  
 </script>
 </head>
@@ -30,7 +37,7 @@
  <br> <br>
 
 <input type="button" value="取得現在時間" onclick="gettime();">
-時間(test)：<p id="tzok"></p>
+時間(test)：<p id="nowt"></p>
  
  <br> <br>
  
