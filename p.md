@@ -15,8 +15,11 @@
          document.getElementById("tzok").textContent=localTime.toString();
      }   
  function gettime(){
-  var d = new Date("HH:MM");
-  document.getElementById("nowt").innerHTML = d;
+   var d = new Date();
+  var h=d.getHours();
+　var m=d.getMinutes();
+
+  document.getElementById("nowt").innerHTML = h +':'+m'';
   
   
   function ShowTime(){
