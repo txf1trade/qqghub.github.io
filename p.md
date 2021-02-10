@@ -2,17 +2,6 @@
 <head>
 <meta charset="UTF-8" />
 <script type="text/javascript">
-
-var data-anls = function (key, value) {
-    var a;
-    if (typeof value === 'string') {
-        a = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*)?)Z$/.exec(value);
-        if (a) {
-            return new Date(Date.UTC(+a[1], +a[2] - 1, +a[3], +a[4], +a[5], +a[6])).format("yyyy-MM-dd HH:mm:ss");
-        }
-    }
-    return value;
-};
   
 function timezone(){
       var content = document.getElementById("UTCtime");
@@ -51,7 +40,7 @@ function gettime(){
 <p id="nowt"></p>
 
  <br> <br>
-
+ 
 
 <font size="1"><span id="result"></span></font><br>
 <font size="1"><span id="result"></span></font><br>
