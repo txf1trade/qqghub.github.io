@@ -2,7 +2,6 @@
 <head>
 <meta charset="UTF-8" />
 <script type="text/javascript">
-  
 Date.prototype.format = function(fmt)
 {
 　　var o = {
@@ -52,9 +51,7 @@ function gettime(){
 　   var m=d.getMinutes();
      document.getElementById("nowt").innerHTML = h +':'+m; 
 }
- 
- 
- 
+
 </script>
 </head>
 <body>
@@ -73,7 +70,7 @@ function gettime(){
 <p id="nowt"></p>
 
 <input type="text" id="name" placeholder="王小明" size="15" autofocus/>
-<input type="button" value="分割" onclick="datanls();">
+<input type="button" value="分割" onclick="dataanls();">
 
 
 
