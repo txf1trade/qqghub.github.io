@@ -22,6 +22,17 @@ Date.prototype.format = function(fmt)
 　　fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));
 　　return fmt;
 }
+
+var data-anls = function (key, value) {
+    var a;
+    if (typeof value === 'string') {
+        a = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*)?)Z$/.exec(value);
+        if (a) {
+            return new Date(Date.UTC(+a[1], +a[2] - 1, +a[3], +a[4], +a[5], +a[6])).format("yyyy-MM-dd HH:mm:ss");
+        }
+    }
+    return value;
+};
   
 function timezone(){
       var content = document.getElementById("UTCtime");
