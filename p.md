@@ -58,7 +58,7 @@ function gettime(){
 
 請輸入姓名(ok)：
 <input type="text" id="name" placeholder="王小明" size="15" autofocus/>
-<input type="button" name="list" value="查詢" onclick="result();"> <!--  ft.js -->
+<input type="button" name="list" value="查詢" onclick="result();"> <!--  all.js -->
   <br>  <br>  
 請輸入時間格式(ok)：
 <input id="text" id="UTCtime" value="2021-02-07T06:00:26.321Z" placeholder="2021-02-07T06:00:26.321Z" size="20" autofocus/>
@@ -74,7 +74,7 @@ function gettime(){
 
 <font size="1"><span id="result"></span></font><br>
 <font size="1"><span id="result"></span></font><br>
-<script src="./ft.js"></script>
+<script src="./all.js"></script>
 
 </body>
 </html>
