@@ -55,7 +55,7 @@ var xmlhttp;
                   }
 
           }
-    var url="https://script.google.com/macros/s/AKfycbwdTX-Nao44d9oTGPRvht5TStmen96zq2ivTMJWH8ZkTGGQPooIcVkW-g/exec";
+    var url="https://script.google.com/macros/s/AKfycbyi3y8R1B5QhM9NwS_92_0Xu8Boo53qybHI1XB_pgpqLyzv3xZW8ZUs/exec";
         xmlhttp.open("get",url+"?name="+encodeURIComponent(name.value),true);
         xmlhttp.send();
 }
