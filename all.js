@@ -20,7 +20,6 @@ Date.prototype.format = function(fmt)
 
 var datanls = function (key, value) {
     var a;
-    var hhmm = 
     if (typeof value === 'string') {
         a = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*)?)Z$/.exec(value);
         if (a) {
