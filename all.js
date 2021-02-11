@@ -39,7 +39,7 @@ var xmlhttp;
                         }
                         html+="</table>";
                         
-                        document.getElementById("name").innerHTML=html;
+                        document.getElementById("result").innerHTML=html;
                         if(obj.length==1) //只有一筆代表查不到資料
                                 console.log('查無資料');
                   }
@@ -52,16 +52,8 @@ var xmlhttp;
         xmlhttp.send();
 }
 
-var s;
-var now = new Date(); 
-var YY = now.getFullYear();
-var MM = now.getMonth();
-var DD = now.getDate();
-var hh = now.getHours();
-var mm = now.getMinutes();
 var datanls = function (key, value) {
     var a;
-    var i = 1;
     if (typeof value === 'string') {
         var re =/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*)?)Z$/;
 		a = re.exec(value);
@@ -75,7 +67,7 @@ var datanls = function (key, value) {
   //  console.log("*--*");
     console.log(value);
     return value;
-}; //true	
+}; //tru
 	
 Date.prototype.format = function(fmt)
 {
