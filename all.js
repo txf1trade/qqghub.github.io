@@ -17,7 +17,7 @@ Date.prototype.format = function(fmt)
 　　fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));
 　　return fmt;
 }
-
+/*
 var datanls = function (key, value) {
     var a;
     if (typeof value === 'string') {
@@ -28,19 +28,19 @@ var datanls = function (key, value) {
     }
     return value;
 }; //true
-
+*/
 
 
 //var nowd = new Date();
 //var ny = nowd.getFullYear();	
 //var nm = nowd.getMonth();
 //var nd = nowd.getDate();
-/*
+
 var datanls = function (key, value) {
     var a;
     if (typeof value === 'string') {
         a = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*)?)Z$/.exec(value);                                             
-          if (+a[1]=="1899"&& +a[2]=="11" && +a[3]=="29") {    
+          if (RegExp(/1899-12-30/).test(value)) {    
 	    //   a[1]=ny; a[2]=nm; a[3]=nd;
             // return new Date(Date.UTC(+a[1], +a[2], +a[3], +a[4], +a[5], +a[6])).format("yyyy-MM-dd HH:mm:ss");
 	       return a[4] + ":" + a[5];
@@ -54,7 +54,7 @@ var datanls = function (key, value) {
     }
     return value;
 };
-*/
+
 
 function timezone(){
       var content = document.getElementById("UTCtime");
