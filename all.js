@@ -17,58 +17,74 @@ var xmlhttp;
 			
                   if (xmlhttp.readyState==4 && xmlhttp.status==200)      
                   {
-			 var result=xmlhttp.responseText;
-                        //console.log(result);
-                        var obj = JSON.parse(result,datanls);//解析json字串為json物件形式                     
-                        var html = '<table border=1 width=100%>';//
-			var temp;
+					  var result=xmlhttp.responseText;  
+					 // console.log(result);  
                         
+                        var obj = JSON.parse(result,datanls);//解析json字串為json物件形式
+                               // console.log(JSON.stringify(obj[1].data[3]));              
+                        var html = '<table border=1 width=100%>';//
+                       // [object Object],[object Object]
+					    var temp;
                         for (var i = 0; i < obj.length; i ++ ) {//
                                 html  += '<tr>';// 
 							
                                 for(j=0;j<obj[i].data.length;j++)
                                 { 
-                                   // if(i==1 && j==3){
-				    if(j==3){
-                                        var temp = obj[i].data[j];
-                                        obj[i].data[j]=temp.substr(11,5);
-                                    }
-					 html+= '<td>'+obj[i].data[j]+'</td>';
+                               
+                                  if( j ==11){
+                                         var temp = obj[i].data[j];
+                                         obj[i].data[j]=temp.substr(11,5);
+                                     }else  if( j ==12){
+                                         var temp = obj[i].data[j];
+                                         obj[i].data[j]=temp.substr(11,5);
+                                     }else if( j ==21){
+                                         var temp = obj[i].data[j];
+                                         obj[i].data[j]=temp.substr(11,5);
+                                     } if( j ==22){
+                                         var temp = obj[i].data[j];
+                                         obj[i].data[j]=temp.substr(11,5);
+                                     }
+
+console.log("i:"+i+" j:"+j+"   >"+obj[i].data[j]);
+								  html+= '<td>'+obj[i].data[j]+'</td>';
+								 	  console.log(html); 
                                 }
-                                html  += '</tr>';   
-                             //   console.log(JSON.stringify(html));         
+                                html  += '</tr>';            
                         }
                         html+="</table>";
                         
-                        document.getElementById("result").innerHTML=html;
+                        document.getElementById("name").innerHTML=html;
                         if(obj.length==1) //只有一筆代表查不到資料
                                 console.log('查無資料');
                   }
 
           }
     //
-    var url="https://script.google.com/macros/s/AKfycbwuOL7-0IeQ_8qhrouSy2lorJaCDwzZf3ynwqd6v5f2XuIqcEvPhbu6/exec"; 
+    var url="https://script.google.com/macros/s/AKfycbzF2RgEm7sAFH6cOIEacfIsM92Q2OU9N2DbNeub4TXkDWuiGrnjK-FW/exec"; 
  // var url="https://script.google.com/macros/s/AKfycbzXhdAxYrzvvdodxhF14jm7r8h94bL8aJNkfNsYRKJIpSI0kXMZ_bee/exec";  行止表
         xmlhttp.open("get",url+"?name="+encodeURIComponent(name.value),true);
         xmlhttp.send();
 }
-
+var now = new Date(); 
+var YY = now.getFullYear();
+var MM = now.getMonth();
+var DD = now.getDate();
+var hh = now.getHours();
+var mm = now.getMinutes();
 var datanls = function (key, value) {
     var a;
     if (typeof value === 'string') {
         var re =/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*)?)Z$/;
 		a = re.exec(value);
-		
-        if (a) {
-            var d = new Date(Date.UTC(+a[1], +a[2]-1, +a[3], +a[4], +a[5], +a[6])).format("yyyy-MM-dd HH:mm:ss");
-            // var d = new Date(Date.UTC(+a[1], +a[2]-1, +a[3], +a[4], +a[5], +a[6])).format("HH:mm");
-            return d;
-        } 
+		if (a) {
+            console.log(Date.UTC(+a[1], +a[2]-1, +a[3], +a[4], +a[5], +a[6]));
+            return new Date(Date.UTC(+a[1], +a[2]-1, +a[3], +a[4], +a[5], +a[6])).format("yyyy-MM-dd HH:mm:ss");
+        }
+        
     }
-  //  console.log("*--*");
-    console.log(value);
+    //console.log(value);
     return value;
-}; //tru
+}; //true	
 	
 Date.prototype.format = function(fmt)
 {
