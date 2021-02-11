@@ -5,7 +5,7 @@
 </script>
 </head>
 <body>
-＊查詢個人即時行止紀錄＊<br><br>
+<font size="6" color="#AA0000" style= "background:red">＊查詢個人即時行止紀錄＊</font><br><br>
   
 請輸入姓名查詢行止紀錄：
 <input type="text" id="name" placeholder="王小明" size="15" autofocus/>
