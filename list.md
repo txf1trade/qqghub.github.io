@@ -12,7 +12,7 @@
 <a href="https://forms.gle/WQoWT3PZ2hjiFBkU8">填寫新版行止紀錄</a>
 <br>查詢新行止（2021/02/14支援以後）<br>
 <a href="https://admingio.github.io/old">查詢舊行止紀錄</a>
-<br>查詢舊行止 （2021/01/24支援至02/14）不在更新<br> 
+<br>查詢舊行止 （2021/01/23支援至02/14）不在更新<br> 
 <font size="1"><span id="result"></span></font><br>
 <script src="./all.js"></script>
 
