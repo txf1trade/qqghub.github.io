@@ -11,7 +11,7 @@
 <br><br>  
 
 <font size="1"><span id="result"></span></font><br>
-<script src="./all.js"></script>
+<script src="./old.js"></script>
 
 </body>
 </html>
