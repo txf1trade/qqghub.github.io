@@ -40,14 +40,13 @@ var xmlhttp;
                                      }else if( j ==21){
                                          var temp = obj[i].data[j];
                                          obj[i].data[j]=temp.substr(11,5);
-                                     } if( j ==22){
+                                     }else if( j ==22){
                                          var temp = obj[i].data[j];
                                          obj[i].data[j]=temp.substr(11,5);
                                      }
-
-console.log("i:"+i+" j:"+j+"   >"+obj[i].data[j]);
 								  html+= '<td>'+obj[i].data[j]+'</td>';
-								 	  console.log(html); 
+                              /* debug       //   console.log("i:"+i+" j:"+j+"   >"+obj[i].data[j]);
+                                      //   console.log(html); */
                                 }
                                 html  += '</tr>';            
                         }
