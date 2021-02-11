@@ -17,11 +17,11 @@ var xmlhttp;
 			
                   if (xmlhttp.readyState==4 && xmlhttp.status==200)      
                   {
-					  var result=xmlhttp.responseText;
+			 var result=xmlhttp.responseText;
                         //console.log(result);
                         var obj = JSON.parse(result,datanls);//解析json字串為json物件形式                     
                         var html = '<table border=1 width=100%>';//
-					    var temp;
+			var temp;
                         
                         for (var i = 0; i < obj.length; i ++ ) {//
                                 html  += '<tr>';// 
