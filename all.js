@@ -31,23 +31,23 @@ var xmlhttp;
                                 for(j=0;j<obj[i].data.length;j++)
                                 { 
                                
-                                  if( j ==11){
+                                  if(i!='0'&& j ==11){
                                          var temp = obj[i].data[j];
                                          obj[i].data[j]=temp.substr(11,5);
-                                     }else  if( j ==12){
+                                     }else  if(i!='0'&&j ==12){
                                          var temp = obj[i].data[j];
                                          obj[i].data[j]=temp.substr(11,5);
-                                     }else if( j ==21){
+                                     }else if(i!='0'&&j ==21){
                                          var temp = obj[i].data[j];
                                          obj[i].data[j]=temp.substr(11,5);
-                                     }else if( j ==22){
+                                     }else if(i!='0'&&j ==22){
                                          var temp = obj[i].data[j];
                                          obj[i].data[j]=temp.substr(11,5);
                                      }
-					
-				html+= '<td>'+obj[i].data[j]+'</td>';
-                              /* debug       //   console.log("i:"+i+" j:"+j+"   >"+obj[i].data[j]);
-                                      //   console.log(html); */
+                                            html+= '<td>'+obj[i].data[j]+'</td>';
+                                 /*  debug console.log("i:"+i+" j:"+j+"   >"+obj[i].data[j]);
+					console.log(html); 
+				    */
                                 }
                                 html  += '</tr>';            
                         }
@@ -60,8 +60,8 @@ var xmlhttp;
 
           }
     //
-    var url="https://script.google.com/macros/s/AKfycbzF2RgEm7sAFH6cOIEacfIsM92Q2OU9N2DbNeub4TXkDWuiGrnjK-FW/exec"; //行止表
-
+    var url="https://script.google.com/macros/s/AKfycbzF2RgEm7sAFH6cOIEacfIsM92Q2OU9N2DbNeub4TXkDWuiGrnjK-FW/exec"; 
+ // var url="https://script.google.com/macros/s/AKfycbzXhdAxYrzvvdodxhF14jm7r8h94bL8aJNkfNsYRKJIpSI0kXMZ_bee/exec";  行止表
         xmlhttp.open("get",url+"?name="+encodeURIComponent(name.value),true);
         xmlhttp.send();
 }
