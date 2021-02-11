@@ -32,10 +32,10 @@ var xmlhttp;
                                         var temp = obj[i].data[j];
                                         obj[i].data[j]=temp.substr(11,5);
                                     }
-								  html+= '<td>'+obj[i].data[j]+'</td>';
+					 html+= '<td>'+obj[i].data[j]+'</td>';
                                 }
                                 html  += '</tr>';   
-                                console.log(JSON.stringify(html));         
+                             //   console.log(JSON.stringify(html));         
                         }
                         html+="</table>";
                         
