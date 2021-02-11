@@ -17,8 +17,8 @@ var xmlhttp;
 			
                   if (xmlhttp.readyState==4 && xmlhttp.status==200)      
                   {
-					  var result=xmlhttp.responseText;  
-					 // console.log(result);  
+			var result=xmlhttp.responseText;  
+			// console.log(result);  
                         
                         var obj = JSON.parse(result,datanls);//解析json字串為json物件形式
                                // console.log(JSON.stringify(obj[1].data[3]));              
