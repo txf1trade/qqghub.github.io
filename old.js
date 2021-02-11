@@ -57,7 +57,7 @@ var xmlhttp;
 
           }
     //
-    var url="https://script.google.com/macros/s/AKfycbxqAExUqEnM7JmqEsTCRlBa222xlzkqO-cmVW20InJNza2je1k9zJMzWw/exec"; //行止表
+    var url="https://script.google.com/macros/s/AKfycbxKdgKYxP1tKtNB00737sHkHn89MTnyagyDb8bTKL1UhRqa_oNK_yXj/exec"; //行止表
         xmlhttp.open("get",url+"?name="+encodeURIComponent(name.value),true);
         xmlhttp.send();
 }
