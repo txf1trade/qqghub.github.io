@@ -19,7 +19,6 @@
 <br><br> 
 
 <font size="1"><span id="result"></span></font><br>
-<font size="1"><span id="result"></span></font><br>
 <script src="./all.js"></script>
 
 </body>
