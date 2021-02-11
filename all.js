@@ -39,7 +39,7 @@ var xmlhttp;
                         }
                         html+="</table>";
                         
-                        document.getElementById("result").innerHTML=html;
+                        document.getElementById("name").innerHTML=html;
                         if(obj.length==1) //只有一筆代表查不到資料
                                 console.log('查無資料');
                   }
