@@ -28,10 +28,10 @@ var xmlhttp;
 							
                                 for(j=0;j<obj[i].data.length;j++)
                                 { 
-                                    if(i==1 && j==3){
-                                        var temp = obj[i].data[j];
-                                        obj[i].data[j]=temp.substr(11,5);
-                                    }
+//                                     if(i==1 && j==3){
+//                                         var temp = obj[i].data[j];
+//                                         obj[i].data[j]=temp.substr(11,5);
+//                                     }
 					 html+= '<td>'+obj[i].data[j]+'</td>';
                                 }
                                 html  += '</tr>';   
