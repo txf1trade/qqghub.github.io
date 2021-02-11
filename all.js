@@ -1,20 +1,15 @@
 
-
 var datanls = function (key, value) {
     var a;
     if (typeof value === 'string') {
         a = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*)?)Z$/.exec(value);
-        if (a[1]=="1899"&&a[2]=="12"&&a[3]=="30") {
-	a[1]=parseInt(YY); a[2]=parseInt(MM); a[3]=parseInt(DD);
-		
+        if (a) {
+            return new Date(Date.UTC(+a[1], +a[2]-1, +a[3], +a[4], +a[5], +a[6])).format("yyyy-MM-dd HH:mm:ss");
         }
-	    //else if(a){
-	//	
-	//}
-	    return new Date(Date.UTC(+a[1], +a[2]-1, +a[3], +a[4], +a[5], +a[6])).format("yyyy-MM-dd HH:mm:ss");
     }
     return value;
 }; //true
+
 
 /*
 //var nowd = new Date();
