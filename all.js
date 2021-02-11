@@ -23,14 +23,11 @@ var xmlhttp;
                         var obj = JSON.parse(result,datanls);//解析json字串為json物件形式
                                // console.log(JSON.stringify(obj[1].data[3]));              
                         var html = '<table border=1 width=100%>';//
-                       // [object Object],[object Object]
-					    var temp;
+			var temp;
                         for (var i = 0; i < obj.length; i ++ ) {//
-                                html  += '<tr>';// 
-							
+                                html  += '<tr>';// 						
                                 for(j=0;j<obj[i].data.length;j++)
                                 { 
-                               
                                   if(i!='0'&& j ==11){
                                          var temp = obj[i].data[j];
                                          obj[i].data[j]=temp.substr(11,5);
@@ -53,7 +50,7 @@ var xmlhttp;
                         }
                         html+="</table>";
                         
-                        document.getElementById("name").innerHTML=html;
+                        document.getElementById("result").innerHTML=html;
                         if(obj.length==1) //只有一筆代表查不到資料
                                 console.log('查無資料');
                   }
