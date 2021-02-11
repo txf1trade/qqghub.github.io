@@ -44,7 +44,8 @@ var xmlhttp;
                                          var temp = obj[i].data[j];
                                          obj[i].data[j]=temp.substr(11,5);
                                      }
-								  html+= '<td>'+obj[i].data[j]+'</td>';
+					
+				html+= '<td>'+obj[i].data[j]+'</td>';
                               /* debug       //   console.log("i:"+i+" j:"+j+"   >"+obj[i].data[j]);
                                       //   console.log(html); */
                                 }
@@ -64,12 +65,7 @@ var xmlhttp;
         xmlhttp.open("get",url+"?name="+encodeURIComponent(name.value),true);
         xmlhttp.send();
 }
-var now = new Date(); 
-var YY = now.getFullYear();
-var MM = now.getMonth();
-var DD = now.getDate();
-var hh = now.getHours();
-var mm = now.getMinutes();
+
 var datanls = function (key, value) {
     var a;
     if (typeof value === 'string') {
