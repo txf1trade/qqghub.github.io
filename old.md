@@ -5,7 +5,7 @@
 </script>
 </head>
 <body>
-<font size="4" color="#000000" style= "background:red">＊查詢個人行止紀錄＊</font><br><br> 
+<font size="4" color="#000000" style= "background:red">＊查詢個人行止紀錄＊</font><br>
 <font size="2" color="#FF0000" style= "background:#FFFF00">＊僅支援 2021/01/23至 02/12 AM 0700＊</font><br><br> 
   
 請輸入姓名查詢行止紀錄：
