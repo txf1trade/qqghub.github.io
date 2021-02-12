@@ -5,6 +5,9 @@
 </script>
 </head>
 <body>
+<font size="4" color="#000000" style= "background:red">＊查詢個人行止紀錄＊</font><br><br> 
+<font size="4" color="#000000" style= "background:red">＊僅支援 2021/01/23至 02/12 AM 0700＊</font><br><br> 
+  
 請輸入姓名查詢行止紀錄：
 <input type="text" id="name" placeholder="王小明" size="15" autofocus/>
 <input type="button" name="list" value="查詢" onclick="result();"> <!--  all.js -->
