@@ -39,16 +39,6 @@ var xmlhttp;
                                                   obj[i].data[j]=temp.substr(11,5);
                                                   break; 
                                       }
-// 					if(i!='0'&& j ==11){
-//                                          obj[i].data[j]=temp.substr(11,5);
-//                                      }else  if(i!='0'&&j ==12){
-//                                          obj[i].data[j]=temp.substr(11,5);
-//                                      }else if(i!='0'&&j ==21){
-//                                          obj[i].data[j]=temp.substr(11,5);
-//                                      }else if(i!='0'&&j ==22){
-//                                          obj[i].data[j]=temp.substr(11,5);
-//                                      }
-
                                      }
                                             html+= '<td>'+obj[i].data[j]+'</td>';
                                  /*  debug console.log("i:"+i+" j:"+j+"   >"+obj[i].data[j]);
