@@ -28,18 +28,26 @@ var xmlhttp;
                                 html  += '<tr>';// 						
                                 for(j=0;j<obj[i].data.length;j++)
                                 { 
-                                  if(i!='0'&& j ==11){
-                                         var temp = obj[i].data[j];
-                                         obj[i].data[j]=temp.substr(11,5);
-                                     }else  if(i!='0'&&j ==12){
-                                         var temp = obj[i].data[j];
-                                         obj[i].data[j]=temp.substr(11,5);
-                                     }else if(i!='0'&&j ==21){
-                                         var temp = obj[i].data[j];
-                                         obj[i].data[j]=temp.substr(11,5);
-                                     }else if(i!='0'&&j ==22){
-                                         var temp = obj[i].data[j];
-                                         obj[i].data[j]=temp.substr(11,5);
+                                     var temp = obj[i].data[j];
+				     if(i!='0'){
+                                         switch(j) { 
+                                              case 11: 
+                                              case 12: 
+                                              case 21: 
+                                              case 22:
+                                                  obj[i].data[j]=temp.substr(11,5);
+                                                  break; 
+                                      }
+// 					if(i!='0'&& j ==11){
+//                                          obj[i].data[j]=temp.substr(11,5);
+//                                      }else  if(i!='0'&&j ==12){
+//                                          obj[i].data[j]=temp.substr(11,5);
+//                                      }else if(i!='0'&&j ==21){
+//                                          obj[i].data[j]=temp.substr(11,5);
+//                                      }else if(i!='0'&&j ==22){
+//                                          obj[i].data[j]=temp.substr(11,5);
+//                                      }
+
                                      }
                                             html+= '<td>'+obj[i].data[j]+'</td>';
                                  /*  debug console.log("i:"+i+" j:"+j+"   >"+obj[i].data[j]);
