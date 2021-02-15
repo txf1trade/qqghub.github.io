@@ -28,8 +28,9 @@ var xmlhttp;
                                 html  += '<tr>';// 						
                                 for(j=0;j<obj[i].data.length;j++)
                                 { 
-                                     var temp = obj[i].data[j];
+
 				     if(i!='0'){
+					 var temp = obj[i].data[j];
                                          switch(j) { 
                                               case 11: 
                                               case 12: 
