@@ -11,7 +11,7 @@
 
 
 <font size="1"><span id="result"></span></font><br>
-<script src="./all.js"></script>
+<script src="./tt.js"></script>
 
 </body>
 </html>
