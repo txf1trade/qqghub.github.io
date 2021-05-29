@@ -20,8 +20,8 @@ var xmlhttp;
 			 console.log(result);
 
                         var obj = JSON.parse(result,datafmt);//解析json字串為json物件形式
-                                console.log(JSON.stringify(obj[1].data[3]));
-                        var html = '<table border=1 width=inherit>';//
+                                console.log(JSON.stringify(obj));
+                        var html = '<table border=1 width=100%>';//
 			var temp;
                         for (var i = 0; i < obj.length; i ++ ) {//
                                 html  += '<tr>';//
