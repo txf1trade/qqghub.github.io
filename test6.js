@@ -19,7 +19,7 @@ var xmlhttp;
 			var result=xmlhttp.responseText;
 			// console.log(result);
 
-                        var obj = JSON.parse(result,datanls);//解析json字串為json物件形式
+                        var obj = JSON.parse(result,datafmt);//解析json字串為json物件形式
                                // console.log(JSON.stringify(obj[1].data[3]));
                         var html = '<table border=1 width=100%>';//
 			var temp;
@@ -60,7 +60,7 @@ var xmlhttp;
         xmlhttp.send();
 }
 
-var datanls = function (key, value) {
+var datafmt = function (key, value) {
     var a;
     if (typeof value === 'string') {
         var re =/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*)?)Z$/;
