@@ -55,7 +55,7 @@ var xmlhttp;
 
           }
     //
-    var url="https://script.google.com/macros/s/AKfycbxrDZ9TnEIsV-GQZcv6ALyUxwcU6_Jbp1gzpB8zoflryGnF_lg9o-IPiNIV7aa4h2xXHA/exec"; //即時行止表
+    var url="https://script.google.com/macros/s/AKfycbzAyxTV-8Fc1kx5GYoJI4yPATA6DX6_A5hajA4Q6EKeo7YecHrTpw7lLso3Iu12R0ePRg/exec"; //即時行止表
         xmlhttp.open("get",url+"?name="+encodeURIComponent(name.value),true);
         xmlhttp.send();
 }
