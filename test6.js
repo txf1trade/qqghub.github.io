@@ -17,10 +17,10 @@ var xmlhttp;
                   if (xmlhttp.readyState==4 && xmlhttp.status==200)
                   {
 			var result=xmlhttp.responseText;
-			 console.log(result);
+			 console.log("a."+result);
 
                         var obj = JSON.parse(result,datafmt);//解析json字串為json物件形式
-                                console.log(JSON.stringify(obj));
+                                console.log("b"+JSON.stringify(obj));
                         var html = '<table border=1 width=100%>';//
 			var temp;
                         for (var i = 0; i < obj.length; i ++ ) {//
