@@ -12,7 +12,7 @@
 <input type="button" name="list" value="查詢" onclick="result();"> <!--  all.js -->
 <br><br>
 <a href="https://forms.gle/DR3NLjr4xeaZP9ut7">填寫新版行止紀錄</a><br>
-<a href="https://admingio.github.io/old">返回舊版查詢(停止更新)</a><br>
+<a href="https://qqghub.github.io/old">返回舊版查詢(停止更新)</a><br>
 
 <font size="2" color="#000000" style= "background:#666666">＊僅支援 2021/01/23至 02/12 AM 0700之前＊</font><br><br>
 <font size="1"><span id="result"></span></font><br>
