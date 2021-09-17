@@ -16,7 +16,7 @@
 
 <font size="2" color="#000000" style= "background:#666666">＊僅支援 2021/01/23至 02/12 AM 0700之前＊</font><br><br>
 <font size="1"><span id="result"></span></font><br>
-<script src="./all.js"></script>
+<script src="./d4g.js"></script>
 
 </body>
 </html>
